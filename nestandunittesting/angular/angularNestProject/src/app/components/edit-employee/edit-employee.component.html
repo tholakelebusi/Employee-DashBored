@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Edit a Employees</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+  
+      <form #f="ngForm" class="mat-elevation-z8" style="width: 100%; padding: 5px;" >
+          
+     
+            <input matInput placeholder="Name" name="name" [(ngModel)] = "employees.name" required>
+    
+       
+              <input matInput placeholder="position" name="position" [(ngModel)] = "employees.position" required>
+              <button  mat-raised-button  (click)="EditEmployee(employees)" color="primary">Save Employee</button>
+            </form>
+    </mat-card-content>
+  
+      <!-- <button  mat-raised-button *ngIf="!employee.id" (click)="updateEmployee(f)" color="primary">Update Employee</button> -->
+       
+    
+      
+        <!-- <button  mat-raised-button (click)="newContact()" color="primary">New..</button> -->
+  
+  </mat-card>
