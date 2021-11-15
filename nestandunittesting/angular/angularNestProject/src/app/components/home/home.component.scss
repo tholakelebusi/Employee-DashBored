@@ -10,12 +10,7 @@ p{
    
 }
 
-svg{
-    height: 1cm;
-    width: 1cm;
-    margin-left: 85%;
-    margin-top: 0.5cm;
-}
+
 h2 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -32,4 +27,6 @@ h2 {
   text-transform: uppercase;
    color:black;
    text-align: left;
+   font-style: italic;
+   font-variant: small-caps;
   }
