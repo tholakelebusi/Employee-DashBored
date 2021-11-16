@@ -1,28 +1,17 @@
 
 
+<form #f="ngForm" >
+	<input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="employees.name">
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input type="text" class="form-control" name="name" id="name" #name="ngModel" [(ngModel)]="employees.name"
+		 placeholder="Full Name" required>
+	</div>
+	<div class="form-group">
+		<label for="position">Position</label>
+		<input type="text" class="form-control" name="position" id="position" #name="ngModel" [(ngModel)]="employees.position"
+		 placeholder="Position">
+	</div>
 
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Create a Employees</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-
-    <form #f="ngForm" class="mat-elevation-z8" style="width: 100%; padding: 5px;" >
-        
-   
-          <input matInput placeholder="Name" name="name" [(ngModel)] = "employees.name" required>
-  
-     
-            <input matInput placeholder="position" name="position" [(ngModel)] = "employees.position" required>
-            <button  mat-raised-button  (click)="createEmployee(f.value)" color="primary">Save Employee</button>
-          </form>
-  </mat-card-content>
-
-    <!-- <button  mat-raised-button *ngIf="!employee.id" (click)="updateEmployee(f)" color="primary">Update Employee</button> -->
-     
-  
-    
-      <!-- <button  mat-raised-button (click)="newContact()" color="primary">New..</button> -->
-
-</mat-card>
-
+  <button  mat-raised-button  (click)="createEmployee(f.value)">Save Employee</button>
+</form>

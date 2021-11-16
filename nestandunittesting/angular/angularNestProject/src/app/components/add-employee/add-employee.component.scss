@@ -1,10 +1,10 @@
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
-form{
-    
-width:50%;
-height:50%;
-margin-bottom:2cm;
-margin-top: 2cm;
-margin-left: 30%;
-
+button 
+{
+    color:rgb(21, 152, 204);
+    margin-left: 35%;
 }
+
+button:hover, a.button:hover {
+    cursor: pointer
+  }

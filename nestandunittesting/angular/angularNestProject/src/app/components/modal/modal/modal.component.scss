@@ -1,0 +1,32 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    min-height: 350px;
+    min-width: 400px;
+    z-index: 99;
+}
+
+.modal-body {
+    padding: 0 20px;
+}
+
+.header {
+    padding: 0 10px;
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button 
+{
+    color:rgb(21, 152, 204);
+    margin-left: 40%;
+}
+
+button:hover, a.button:hover {
+    cursor: pointer
+  }

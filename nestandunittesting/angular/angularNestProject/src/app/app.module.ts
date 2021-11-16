@@ -15,14 +15,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { EditEmployeeComponent } from './components/edit-employee/edit-employee.component';
+import { ModalComponent } from './components/modal/modal/modal.component';
 
+import { MatDialogModule } from '@angular/material/dialog';
+import {ReactiveFormsModule  } from '@angular/forms';
+import { EditModalComponent } from './components/modal/modal/Modals/editModal/edit-modal/edit-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     HomeComponent,
     AddEmployeeComponent,
-    EditEmployeeComponent
+    EditEmployeeComponent,
+    ModalComponent,
+    EditModalComponent
    
   ],
   imports: [
@@ -34,7 +40,9 @@ import { EditEmployeeComponent } from './components/edit-employee/edit-employee.
     MatGridListModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatDialogModule,
+    ReactiveFormsModule 
   ],
   providers: [EmployeesService],
   bootstrap: [AppComponent]

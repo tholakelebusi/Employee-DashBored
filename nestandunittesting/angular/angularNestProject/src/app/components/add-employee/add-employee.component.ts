@@ -14,7 +14,9 @@ export class AddEmployeeComponent implements OnInit {
 
 
 
-  constructor(private empService:EmployeesService,public route:Router) { }
+  constructor(private empService:EmployeesService,
+   
+    public route:Router) { }
 
   ngOnInit(): void {
     this.empService
@@ -26,10 +28,11 @@ export class AddEmployeeComponent implements OnInit {
    );
   }
 
+
   createEmployee(add:EmployeeC){
     this.empService.AddEmployee(add).subscribe((result)=>{
     
     });
-    this.route.navigate(['']);
+window.location.reload();
   }
 }

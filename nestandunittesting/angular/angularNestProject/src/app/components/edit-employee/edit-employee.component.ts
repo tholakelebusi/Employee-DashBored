@@ -23,7 +23,7 @@ export class EditEmployeeComponent implements OnInit {
     
     })
 
-    this.emplService.getOne(this.id)
+    this.emplService.getOne(localStorage.getItem("id"))
     .subscribe((employe) => {
       this.employees = employe
   
@@ -39,7 +39,7 @@ export class EditEmployeeComponent implements OnInit {
    
     });
     
-    this.route.navigate(['']);
+   window.location.reload();
   }
   }
 
